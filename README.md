@@ -10,13 +10,13 @@
   <h3 align="center">Cisco DUO User Sync Script</h3>
 
   <p align="center">
-    <br />
     · <a href="https://github.com/eizieizi/duo-usersync/issues">Report Bug</a>
     · <a href="https://github.com/eizieizi/duo-usersync/issues">Request Feature</a>
   </p>
 </div>
 
-
+<br/>
+<br/>
 
 <!-- TABLE OF CONTENTS -->
 <details>
