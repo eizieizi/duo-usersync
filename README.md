@@ -107,10 +107,9 @@ The following data has is queried:
 * Username format in DUO (samAccountName or UserPrincipalName)
 * Automatic Sync Interval value
 
-The API Key, Integration Key and Directory Key are stored encrypted on the filesystem. The values are encrypted with a key which is also stored on the filesystem. 
+The API Key, Integration Key and Directory Key are stored encrypted on the filesystem. The values are encrypted with a key which is also stored on the filesystem. It´s not possible to use SecureString because they are tied to a user account which prevents automatic sync as scheduled task. 
 
-It´s not possible to use SecureString because they are tied to a user account which prevents automatic sync as background task. 
-The script will also install a scheduled task to allow automatic synchronization.
+The script will install a scheduled task to allow automatic synchronization.
 After the installation is finished, the script copied itself to the 
 
 ```powershell
