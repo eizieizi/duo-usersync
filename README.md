@@ -50,9 +50,9 @@
 
 Cisco DUO allows to synchronize internal users from Active Directory into the own DUO Tenant to automatically enroll users with multi factor authentication. DUO uses its own Software called "DUO Authentication Proxy" for this. 
 
-Unfortunatley, when using the proxy, the synchronization interval between the local Active Directory and DUO is hardcoded to 24 hours and cannot be changed. The only solution is to trigger a manual sync in the Dashboard.
+Unfortunately, when using the proxy, the synchronization interval between the local Active Directory and DUO is hardcoded to 24 hours and cannot be changed. The only solution is to trigger a manual sync in the Dashboard.
 
-Unfortunatley, the DUO API does not allow to do a bulk synchronization of all users like it is possible in the directory config of the DUO GUI. 
+Unfortunately, the DUO API does not allow to do a bulk synchronization of all users like it is possible in the directory config of the DUO GUI. 
 It is necessary to download all users from DUO, compare with the local users in the AD synchronization group and trigger synchronization on a per-user basis. 
 
 So this script is used in combination with the DUO Authentication Proxy. The Script triggers the synchronization of a user in the DUO API, which then triggers the synchronization of the User through the Authentication Proxy. 
