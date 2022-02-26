@@ -1,0 +1,18 @@
+--> github readme erstellen
+
+
+Done:
+--> samaccountname und upn auswählen
+--> Parameter mandatory machen
+--> paging checks
+--> check which rights are necessary for script (in duo) and if its possible to use 2 duo admin api applications
+--> Check dependencies and install them
+
+Todo Later:
+--> local service antstatt system verwenden 
+
+
+
+Tests:
+
+--> Nested Groups
