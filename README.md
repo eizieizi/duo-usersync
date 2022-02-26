@@ -130,6 +130,11 @@ It´s also possible to manually trigger a sync.
 ./sync.ps1 -ManualSync
 ```
 
+Every run of the script is logged 
+
+```powershell
+C:\Program Files\Duo Security Authentication Proxy\usersync\sync-log.txt
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
