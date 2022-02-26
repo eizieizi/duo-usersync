@@ -62,7 +62,6 @@ So this script is used in combination with the DUO Authentication Proxy. The Scr
 
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 <br/>
@@ -87,7 +86,7 @@ See the Screenshot for the necessary permissions:
 
 <br/>
 
-## Installation
+### Installation
 
 The Script has to be installed with the following parameter. 
 
@@ -123,7 +122,7 @@ C:\Program Files\Duo Security Authentication Proxy\usersync
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+### Usage
 
 It´s also possible to manually trigger a sync.
 
@@ -137,7 +136,7 @@ It´s also possible to manually trigger a sync.
 
 
 <!-- ROADMAP -->
-## Roadmap
+### Roadmap
 
 - [x] Add Readme
 - [ ] Try the script in a bigger scope with more users to see if any problems occure (API rate limit, pagination, ...)
