@@ -55,7 +55,7 @@ Unfortunatley, when using the proxy, the synchronization interval between the lo
 Unfortunatley, the DUO API does not allow to do a bulk synchronization of all users like it is possible in the directory config of the DUO GUI. 
 It is necessary to download all users from DUO, compare with the local users in the AD synchronization group and trigger synchronization on a per-user basis. 
 
-So this script is used in combination with the DUO Authentication Proxy. The Script triggers the synchronization of a user in the DUO API, which then triggers the synchronization of the User through Authentication Proxy. 
+So this script is used in combination with the DUO Authentication Proxy. The Script triggers the synchronization of a user in the DUO API, which then triggers the synchronization of the User through the Authentication Proxy. 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -87,7 +87,7 @@ See the Screenshot for the necessary permissions:
 
 <br/>
 
-### Installation
+## Installation
 
 The Script has to be installed with the following parameter. 
 
@@ -107,8 +107,9 @@ The following data has is queried:
 * Username format in DUO (samAccountName or UserPrincipalName)
 * Automatic Sync Interval value
 
-The API Key, Integration Key and Directory Key are stored encrypted on the filesystem. The values are encrypted with a key which is also stored in the filesystem - it´s not possible to use SecureString because they are tied to a user account which prevents automatic sync as background task. 
+The API Key, Integration Key and Directory Key are stored encrypted on the filesystem. The values are encrypted with a key which is also stored on the filesystem. 
 
+It´s not possible to use SecureString because they are tied to a user account which prevents automatic sync as background task. 
 The script will also install a scheduled task to allow automatic synchronization.
 After the installation is finished, the script copied itself to the 
 
@@ -116,7 +117,7 @@ After the installation is finished, the script copied itself to the
 C:\Program Files\Duo Security Authentication Proxy\usersync
 ```
 
- location and the downloaded folder can be deleted. 
+ location. The downloaded folder where the installer was started can now be deleted. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
